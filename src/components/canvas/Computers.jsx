@@ -1,11 +1,11 @@
 // Import necessary React hooks and components from React, React Three Fiber, and Drei
-import React, {Suspense} from 'react'
+import React, {Suspense, useEffect, useState} from 'react'
 import { Canvas } from '@react-three/fiber' // Component used to render a 3D scene
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei' // Drei components for controls and model loading
 import CanvasLoader from '../Loader' // Custom loader component for the canvas
 
 // Define a component to load and display the 3D model
-const Computers = () => {
+const Computers = ({isMobile}) => {
   // Load a GLTF model of a computer. The path is relative to the public directory or wherever your assets are served from.
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
@@ -32,8 +32,8 @@ const Computers = () => {
       {/* The model loaded from the GLTF file. Positioned, scaled, and rotated in the scene. */}
       <primitive 
         object={computer.scene} // The 3D object to render
-        scale={0.75} // Scale the model to fit the scene
-        position={[0, -3.25, -1.5]} // Position of the model in 3D space
+        scale={isMobile? 0.7: 0.75} // Scale the model to fit the scene
+        position={isMobile? [0,-3,-2.2]: [0, -3.25, -1.5]} // Position of the model in 3D space
         rotation={[-0.01, -0.2, -0.1]} // Rotation of the model in radians
       />
     </mesh>
@@ -42,6 +42,27 @@ const Computers = () => {
 
 // Define a component to set up the canvas and include the Computers component within it
 const ComputersCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    // Add event listener for changes to the screen size 
+    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    
+    // Set the initial value of the isMobile state 
+    setIsMobile(mediaQuery.matches)
+
+    // Define a callback function to handle changes to the media query 
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches)
+    }
+    // Add the callback function above as a listener for changes to the media query 
+    mediaQuery.addEventListener('change', handleMediaQueryChange)
+
+    // Remove the listener when the component is unmounted 
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }
+  }, [])
   return (
     // The Canvas component is used to render our 3D scene
     <Canvas 
@@ -59,7 +80,7 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2} // Same as above, ensures camera only orbits horizontally
         />
         {/* The Computers component that loads and displays the 3D model */}
-        <Computers/>
+        <Computers isMobile={isMobile}/>
       </Suspense>
       {/* Preload component from Drei to preload assets */}
       <Preload all/> 
