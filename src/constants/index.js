@@ -16,14 +16,15 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
-    tesla,
+    blazing,
+    coding_dojo,
     shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
 } from "../assets";
+
 
 export const navLinks = [
     {
@@ -116,57 +117,47 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        title: "Kitchen Manager",
+        company_name: "Blazing Onion",
+        icon: blazing,
+        iconBg: "#F5F5F5",
+        date: "Jan 2017 - Dec 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Coordinating and supervising all kithcen staff to ensure the highest quality of food and service.",
+            "Creating and maintaining a safe and clean kitchen environment.",
+            "Managing inventory and ordering supplies.",
+            "Training and developing kitchen staff to ensure the highest quality of food and service."
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Assistant Instructor",
+        company_name: "Coding Dojo",
+        icon: coding_dojo,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Dec 2021 - Aug 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Assisting students with understanding and implementing coding concepts.",
+            "Providing feedback to students and helping them improve their coding skills.",
+            "Assisting with curriculum development and lesson planning.",
+            "Mentoring students and helping them prepare for job interviews.",
+            "Using metrics to track student progress and identify areas of improvement. While working closely with Instructors and student support to ensure student success."
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Software Engineer / Lead Instructor",
+        company_name: "Coding Dojo",
+        icon: coding_dojo,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "Aug 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Teaching full-stack web development using different technologies such as Python, Flask, Django, JavaScript, React, Node.js, Express, and MongoDB.",
+            "Assisting students with understanding and implementing coding concepts.",
+            "Providing feedback to students and helping them improve their coding skills",
+            "Assisting with curriculum development and lesson planning.",
+            "Working closely with Instructors and student support to ensure student success.",
+            "Using metrics to track student progress and identify areas of improvement.",
         ],
-    },
+    }
 ];
 
 const testimonials = [
