@@ -13,12 +13,9 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
     blazing,
     coding_dojo,
-    shopify,
     carrent,
     jobit,
     tripguide,
@@ -78,6 +75,14 @@ const technologies = [
         icon: typescript,
     },
     {
+        name: "python",
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+    },
+    {
+        name: "java",
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+    },
+    {
         name: "React JS",
         icon: reactjs,
     },
@@ -98,20 +103,24 @@ const technologies = [
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "SQL",
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
     },
+    // {
+    //     name: "Three JS",
+    //     icon: threejs,
+    // },
     {
         name: "git",
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
-    },
-    {
         name: "docker",
         icon: docker,
+    },
+    {
+        name: "aws",
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
     },
 ];
 

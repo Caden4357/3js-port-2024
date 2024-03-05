@@ -21,7 +21,7 @@ const Computers = ({isMobile}) => {
       <pointLight intensity={1}/>
       {/* Spot light emits light in a cone shape. It can cast shadows. */}
       <spotLight
-        position={[-3, 5, 1]} // Position of the light in 3D space
+        position={[-3,5,1]} // Position of the light in 3D space
         angle={1} // The angle of the light cone
         penumbra={1} // The softness of the edge of the light cone
         intensity={300} // The brightness of the light
@@ -32,9 +32,9 @@ const Computers = ({isMobile}) => {
       {/* The model loaded from the GLTF file. Positioned, scaled, and rotated in the scene. */}
       <primitive 
         object={computer.scene} // The 3D object to render
-        scale={isMobile? 0.7: 0.75} // Scale the model to fit the scene
-        position={isMobile? [0,-3,-2.2]: [0, -3.25, -1.5]} // Position of the model in 3D space
-        rotation={[-0.01, -0.2, -0.1]} // Rotation of the model in radians
+        scale={isMobile?0.7:0.75} // Scale the model to fit the scene
+        position={isMobile? [0,-3,-2.2]: [0,-3.25,-1.5]} // Position of the model in 3D space
+        rotation={[-0.01,-0.2,-0.1]} // Rotation of the model in radians
       />
     </mesh>
   )
@@ -76,8 +76,8 @@ const ComputersCanvas = () => {
         {/* OrbitControls allow the camera to orbit around a target */}
         <OrbitControls 
           enableZoom={false} // Disables zooming
-          maxPolarAngle={Math.PI / 2} // Limit the orbit angle to prevent flipping
-          minPolarAngle={Math.PI / 2} // Same as above, ensures camera only orbits horizontally
+          maxPolarAngle={Math.PI/2} // Limit the orbit angle to prevent flipping
+          minPolarAngle={Math.PI/2} // Same as above, ensures camera only orbits horizontally
         />
         {/* The Computers component that loads and displays the 3D model */}
         <Computers isMobile={isMobile}/>
