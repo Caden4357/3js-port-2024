@@ -23,9 +23,10 @@ import threejs from "./tech/threejs.svg";
 import blazing from "./company/blazing.png";
 import coding_dojo from "./company/coding_dojo.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import chatSocket from './chat-socket.png';
+import storyline from './storyline.png';
+import imdbClone from "./imdb-clone.png";
+
 
 export {
   logo,
@@ -50,7 +51,7 @@ export {
   threejs,
   blazing,
   coding_dojo,
-  carrent,
-  jobit,
-  tripguide,
+  storyline,
+  imdbClone,
+  chatSocket,
 };
