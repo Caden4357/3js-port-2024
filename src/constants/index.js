@@ -200,15 +200,11 @@ const projects = [
     {
         name: "IMDb Clone",
         description:
-            "Web-based platform that allows users to search for movies or tv shows, view details about a movies or shows and view the cast and crew.",
+            "Web-based platform that allows users to search for movies or tv shows, view details about a movies and shows. Users can then view the cast and crew as well as the IMDb score, trailer and movie posters. Uses TMDb API, Tailwind CSS, React & Typescript",
         tags: [
             {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
                 name: "Typescript",
-                color: "",
+                color: "blue-text-gradient",
             },
             {
                 name: "TMDb API",
@@ -221,12 +217,13 @@ const projects = [
         ],
         image: imdbClone,   
         source_code_link: "https://github.com/Caden4357/imdb-clone",
+        video_link: 'https://imdb-clone-five-black.vercel.app/',
         deployed_link: 'https://imdb-clone-five-black.vercel.app/' 
     },
     {
         name: "Chat.io",
         description:
-            "Web application that enables users to chat with each others in real-time. Users can join and leave rooms freely. While in a room users can chat with each other. Chat.io users secure authentication and authorization with bcrypt and jsonwebtoken.",
+            "Web application that enables users to chat with each others in real-time. Users can join and leave rooms freely. While in a room users can chat with each other. Chat.io uses secure authentication and authorization with bcrypt and jsonwebtoken.",
         tags: [
             {
                 name: "react",
@@ -242,12 +239,13 @@ const projects = [
             },
         ],
         image: chatSocket,
+        video_link: 'https://www.youtube.com/watch?v=FSFeyguZFSY',
         source_code_link: "https://github.com/Caden4357/socketIntro/tree/master/socket-intro",
     },
     {
         name: "Storyline",
         description:
-            "A place for people to share their stories and experiences. Users can create, read, update, and delete their stories. Users can also like and comment on other users stories.",
+            "A place for people to share their stories and experiences. Create, read, update, and delete stories. Read others storys if you enjoy them like and comment on them. Each user has their own profile where they can upload a profile picture and view their favorite stories.",
         tags: [
             {
                 name: "Django",
@@ -263,6 +261,7 @@ const projects = [
             },
         ],
         image: storyline,
+        video_link:'https://www.youtube.com/watch?v=OB0HbUGnU6Q&t=2s',
         source_code_link: "https://github.com/Caden4357/ProjectsAndAlgos/tree/main/Week1/ProjectWireframe/storyline/storyline",
     },
 ];

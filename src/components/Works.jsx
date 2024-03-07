@@ -3,29 +3,30 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { github } from '../assets'
+import {video} from '../assets'
 import { SectionWrapper } from '../components/HOC'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { Link } from 'react-router-dom'
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployed_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployed_link, video_link }) => {
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[500px]'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
           <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover' >
+            <div onClick={() => window.open(video_link, '_blank')} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img src={video} alt="github" className='w-8 h-8' />
+            </div>
             <div onClick={() => window.open(source_code_link, '_blank')} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
               <img src={github} alt="github" className='w-8 h-8' />
             </div>
-            {/* <div onClick={() => window.open(source_code_link, '_blank')} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
-              <img src={github} alt="github" className='w-8 h-8' />
-            </div> */}
           </div>
         </div>
         <div className='mt-5'>
@@ -40,11 +41,11 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           }
 
         </div>
-        {
+        {/* {
           deployed_link && (
             <Link to={deployed_link} target='_blank' className='mt-4 text-[14px] font-bold text-secondary'>- View Deployed Project</Link>
           )
-        }
+        } */}
       </Tilt>
 
     </motion.div>
