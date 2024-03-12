@@ -226,7 +226,7 @@ const projects = [
             "Web application that enables users to chat with each others in real-time. Users can join and leave rooms freely. While in a room users can chat with each other. Chat.io uses secure authentication and authorization with bcrypt and jsonwebtoken.",
         tags: [
             {
-                name: "react",
+                name: "React",
                 color: "blue-text-gradient",
             },
             {
