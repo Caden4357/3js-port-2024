@@ -23,6 +23,37 @@ const Contact = () => {
   const handleSubmit = (e) => { 
     e.preventDefault();
     setLoading(true);
+    emailjs.send(
+      'service_sgvzj5m', 
+      'template_4kb5qxj', 
+      {
+        from_name:form.name, 
+        to_name:'Caden', 
+        from_email:form.email,
+        to_email:'wilcox4357@gmail.com',
+        message:form.message
+      }, 
+      '4HGxdMqX8EG21LH63'
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Thank you I will get back to you soon!')
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+      })
+        .catch((err) => {
+          console.log(err);
+          setLoading(false);
+          alert('Something went wrong, please try again later')
+          setForm({
+            name: '',
+            email: '',
+            message: ''
+        })
+      })
   }
 
   return (
