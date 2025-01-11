@@ -18,7 +18,7 @@ import {
     coding_dojo,
     chatSocket,
     imdbClone,
-    storyline,
+    quizwarz,
     threejs,
 } from "../assets";
 
@@ -243,26 +243,27 @@ const projects = [
         source_code_link: "https://github.com/Caden4357/socketIntro/tree/master/socket-intro",
     },
     {
-        name: "Storyline",
+        name: "Quiz Warz",
         description:
-            "A place for people to share their stories and experiences. Create, read, update, and delete stories. Read others storys if you enjoy them like and comment on them. Each user has their own profile where they can upload a profile picture and view their favorite stories.",
+            "Trivia game that allows users to test their knowledge in a variety of categories. Users can select a category and difficulty level and then answer a series of questions. Users can track their score and see how they compare to other players. Uses Open Trivia DB API, React, and Tailwind CSS.",
         tags: [
             {
-                name: "Django",
+                name: "React",
                 color: "blue-text-gradient",
             },
             {
-                name: "SQL",
+                name: "Tailwind CSS",
                 color: "green-text-gradient",
             },
             {
-                name: "CSS",
+                name: "NodeJS",
                 color: "pink-text-gradient",
             },
         ],
-        image: storyline,
-        video_link:'https://www.youtube.com/watch?v=OB0HbUGnU6Q&t=2s',
-        source_code_link: "https://github.com/Caden4357/ProjectsAndAlgos/tree/main/Week1/ProjectWireframe/storyline/storyline",
+        image: quizwarz,
+        deployed_link: 'https://quizwarz-client-hh24.vercel.app/',
+        video_link: 'https://quizwarz-client-hh24.vercel.app/', 
+        source_code_link: "https://github.com/Caden4357/quizwarz-client/tree/main",
     },
 ];
 

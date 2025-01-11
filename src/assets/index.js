@@ -25,7 +25,7 @@ import blazing from "./company/blazing.png";
 import coding_dojo from "./company/coding_dojo.png";
 
 import chatSocket from './chat-socket.png';
-import storyline from './storyline.png';
+import quizwarz from './quizwarz.png';
 import imdbClone from "./imdb-clone.png";
 
 
@@ -53,7 +53,7 @@ export {
   threejs,
   blazing,
   coding_dojo,
-  storyline,
   imdbClone,
   chatSocket,
+  quizwarz
 };
