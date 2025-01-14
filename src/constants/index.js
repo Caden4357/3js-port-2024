@@ -40,15 +40,15 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Full Stack Developer",
         icon: web,
     },
     {
-        title: "React Developer",
+        title: "Mobile Developer",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "AWS Cloud Certified",
         icon: backend,
     },
     {
@@ -221,6 +221,30 @@ const projects = [
         deployed_link: 'https://imdb-clone-five-black.vercel.app/' 
     },
     {
+        name: "Quiz Warz",
+        description:
+        // Users can track their score and see how they compare to other players. (add once backend is configured)
+            "Trivia game that allows users to test their knowledge in a variety of categories. Users can select a category and difficulty level and then answer a series of questions. Uses Open Trivia DB API, React, and Tailwind CSS.",
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "NodeJS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: quizwarz,
+        deployed_link: 'https://quizwarz-client-hh24.vercel.app/',
+        video_link: 'https://quizwarz-client-hh24.vercel.app/', 
+        source_code_link: "https://github.com/Caden4357/quizwarz-client/tree/main",
+    },
+    {
         name: "Chat.io",
         description:
             "Web application that enables users to chat with each others in real-time. Users can join and leave rooms freely. While in a room users can chat with each other. Chat.io uses secure authentication and authorization with bcrypt and jsonwebtoken.",
@@ -241,30 +265,7 @@ const projects = [
         image: chatSocket,
         video_link: 'https://www.youtube.com/watch?v=FSFeyguZFSY',
         source_code_link: "https://github.com/Caden4357/socketIntro/tree/master/socket-intro",
-    },
-    {
-        name: "Quiz Warz",
-        description:
-            "Trivia game that allows users to test their knowledge in a variety of categories. Users can select a category and difficulty level and then answer a series of questions. Users can track their score and see how they compare to other players. Uses Open Trivia DB API, React, and Tailwind CSS.",
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Tailwind CSS",
-                color: "green-text-gradient",
-            },
-            {
-                name: "NodeJS",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: quizwarz,
-        deployed_link: 'https://quizwarz-client-hh24.vercel.app/',
-        video_link: 'https://quizwarz-client-hh24.vercel.app/', 
-        source_code_link: "https://github.com/Caden4357/quizwarz-client/tree/main",
-    },
+    }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
